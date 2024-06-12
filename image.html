@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem e Música</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            font-size: 2em;
+            color: #ff0066;
+            animation: blink 1s infinite;
+            align-self: center;
+        }
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            margin-top: 20px;
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Feliz dia dos namorados!</h2>
+    <img src="../../../../img.jpg" alt="Imagem Descrição">
+    <audio autoplay loop>
+        <source src="../../../../music.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+</body>
+</html>
