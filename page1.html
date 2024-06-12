@@ -9,6 +9,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
@@ -30,7 +31,9 @@
     </style>
 </head>
 <body>
-    <button onclick="redirectToImagePage()">Clique Aqui</button>
+    <h1> Você recebeu um webcard</h1>
+    <button onclick="redirectToImagePage()">Clique Aqui para abrir</button>
+    <quote>não é virus pode confiar</quote>
     <script>
         function redirectToImagePage() {
             window.location.href = "image.html";
